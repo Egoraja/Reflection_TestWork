@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - EnemyStopper
+  - DeathArea
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Ground
+  - Water
+  - UI
+  - CameraConfiner
+  - Wall
+  - BackGround
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: BackGround
+    uniqueID: 78185499
+    locked: 0
+  - name: PlatformBackGround
+    uniqueID: 2978998879
+    locked: 0
+  - name: Character
+    uniqueID: 719644165
+    locked: 0
+  - name: Platform
+    uniqueID: 146555311
+    locked: 0
+  - name: PlatformFront
+    uniqueID: 506283319
+    locked: 0
+  - name: FrontGround
+    uniqueID: 297497439
+    locked: 0
