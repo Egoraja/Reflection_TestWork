@@ -71,7 +71,9 @@ public class PlayerMovement : MonoBehaviour
     private void HorizontalMovement(float direction)
     {
         if (playerState.IsAlive == true && currentFreezTime <= 0)        
-            playerRB.velocity = new Vector2(curveMovement.Evaluate(direction) * movementSpeed, playerRB.velocity.y);               
+            playerRB.velocity = new Vector2(curveMovement.Evaluate(direction) * movementSpeed, playerRB.velocity.y);
+        if (playerState.IsAlive == false)
+            playerRB.velocity = Vector2.zero;
     }
 
     /// <summary>
@@ -105,6 +107,12 @@ public class PlayerMovement : MonoBehaviour
         {
             wallNormal = collision.contacts[0].normal;
         }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == 7) 
+            wallNormal = Vector2.zero;
     }
 
     private void FixedUpdate()
